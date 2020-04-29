@@ -18,13 +18,13 @@
     <button (click)="get3()" class="angka">3</button>
   </div>
   <div>
-    <button (click)="plus()">+</button>
-    <button (click)="minus()">-</button>
-    <button (click)="div()">/</button>
-    <button (click)="mul()">*</button>
-    <button (click) = "hitung()">=</button>
+    <button (click)="plus()" class="ope">+</button>
+    <button (click)="minus()" class="ope">-</button>
+    <button (click)="div()"  class="ope">/</button>
+    <button (click)="mul()"  class="ope">*</button>
+    <button (click) = "hitung()"  class="ope">=</button>
   </div>
-  <button (click)="reset()">Reset</button>
+  <button (click)="reset()" style="margin-left:95px">Reset</button>
 </div>
 
 <div *ngIf="hasilDone">
