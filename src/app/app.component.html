@@ -1,4 +1,31 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div>
+  <div>
+    <button (click)="7()">7</button>
+    <button (click)="8()">8</button>
+    <button (click)="9()">9</button>
+  </div>
+   <div>
+    <button (click)="4()">4</button>
+    <button (click)="5()">5</button>
+    <button (click)="6()">6</button>
+  </div>
+   <div>
+    <button (click)="1()">1</button>
+    <button (click)="2()">2</button>
+    <button (click)="3()">3</button>
+  </div>
+  <div>
+    <button (click)="plus()">+</button>
+    <button (click)="minus()">-</button>
+    <button (click)="div()">/</button>
+    <button (click)="mul()">*</button>
+    <button (click) = "hitung()">=</button>
+  </div>
+</div>
+
+<div *ngIf="hasilDone">
+  {{angka1}}
+  {{operator}}
+  {{angka2}}
+  {{hasil}}
+</div>
